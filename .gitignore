@@ -44,7 +44,6 @@ x64/
 *.svclog
 *.scc
 
-Properties
 .idea
 
 # Visual C++ cache files
