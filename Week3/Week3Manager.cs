@@ -6,7 +6,8 @@ namespace SoongSil_University_Csharp.Week3 {
         public Week3Manager() : base(3) { }
 
         public override void Main() {
-            TypeChangeTest();
+            //ypeChangeTest();
+            ConstTest();
         }
 
         private void TypeChangeTest() {
@@ -20,6 +21,11 @@ namespace SoongSil_University_Csharp.Week3 {
             Console.Out.WriteLine($"str : {str}, {str.GetType()}");
             Console.Out.WriteLine($"numToStr : {numToStr}, {numToStr.GetType()}");
             Console.Out.WriteLine($"strToNum : {strToNum}, {strToNum.GetType()}");
+        }
+
+        private void ConstTest() {
+            const int num = 1234;
+            //num = 2; // const can not fix
         }
     }
 }
