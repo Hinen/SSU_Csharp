@@ -7,7 +7,8 @@ namespace SoongSil_University_Csharp.Week3 {
 
         public override void Main() {
             //ypeChangeTest();
-            ConstTest();
+            //ConstTest();
+            PrefixPostfix();
         }
 
         private void TypeChangeTest() {
@@ -26,6 +27,13 @@ namespace SoongSil_University_Csharp.Week3 {
         private void ConstTest() {
             const int num = 1234;
             //num = 2; // const can not fix
+        }
+
+        private void PrefixPostfix() {
+            int num = 5;
+            Console.Out.WriteLine(num); // 5
+            Console.Out.WriteLine(num++); // 5
+            Console.Out.WriteLine(++num); // 7
         }
     }
 }
