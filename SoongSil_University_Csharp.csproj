@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Week2\Week2Main.cs" />
+    <Compile Include="Core\WeekManagerBase.cs" />
+    <Compile Include="Week2\Week2Manager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Week3\Week3Manager.cs" />
+    <Compile Include="Core\ProgramMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
