@@ -8,7 +8,8 @@ namespace SoongSil_University_Csharp.Week5 {
         public override void Main() {
             //RefTest(); 
             //OutTest();
-            ClassTest();
+            //ClassTest();
+            DeepCoptyTest();
         }
 
         private void RefTest() {
@@ -42,15 +43,47 @@ namespace SoongSil_University_Csharp.Week5 {
         private void ClassTest() {
             var test = new TestClass();
         }
+
+        private void DeepCoptyTest() {
+            var test1 = new TestClass();
+            var test2 = test1;
+            var test3 = test1.DeepCopy();
+
+            test1.value = 10;
+            test2.value = 20;
+            test3.value = 30;
+
+            test1.ShowValue();
+            test2.ShowValue();
+            test3.ShowValue();
+        }
     }
 
     class TestClass {
+        private int _value = 5;
+        public int value {
+            set {
+                _value = value;
+            }
+        }
+
         public TestClass() {
             Console.WriteLine("TestClass Created");
         }
 
         ~TestClass() {
             Console.WriteLine("TestClass Deleted");
+        }
+
+        public TestClass DeepCopy() {
+            var copy = new TestClass();
+            copy.value = _value;
+
+            return copy;
+        }
+
+        public void ShowValue() {
+            Console.WriteLine(_value);
         }
     }
 }
