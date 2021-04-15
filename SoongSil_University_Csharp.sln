@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoongSil_University_Csharp", "SoongSil_University_Csharp.csproj", "{132D9354-51FF-4771-80D3-21A3CEC081A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalTest", "InternalTest\InternalTest.csproj", "{6E3F4A82-9F76-4C8A-B603-79A0D834FC88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{132D9354-51FF-4771-80D3-21A3CEC081A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{132D9354-51FF-4771-80D3-21A3CEC081A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{132D9354-51FF-4771-80D3-21A3CEC081A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3F4A82-9F76-4C8A-B603-79A0D834FC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3F4A82-9F76-4C8A-B603-79A0D834FC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3F4A82-9F76-4C8A-B603-79A0D834FC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3F4A82-9F76-4C8A-B603-79A0D834FC88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,7 +5,8 @@
 
             //weekManager = new Week2.Week2Manager();
             //weekManager = new Week3.Week3Manager();
-            weekManager = new Week5.Week5Manager();
+            //weekManager = new Week5.Week5Manager();
+            weekManager = new Week6.Week6Manager();
 
             weekManager.Main();
         }
