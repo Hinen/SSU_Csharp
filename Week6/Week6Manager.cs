@@ -7,7 +7,8 @@ namespace SoongSil_University_Csharp.Week6 {
         public Week6Manager() : base(6) { }
 
         public override void Main() {
-            InternalTest();
+            //InternalTest();
+            PartialClassTest();
         }
 
         private void InternalTest() {
@@ -22,6 +23,12 @@ namespace SoongSil_University_Csharp.Week6 {
 
             var test3 = new ProtectedInternalTestClass();
             test3.testFunction();
+        }
+
+        private void PartialClassTest() {
+            var test = new TestPartialClass();
+            test.TestFunc1();
+            test.TestFunc2();
         }
     }
 
@@ -56,5 +63,17 @@ namespace SoongSil_University_Csharp.Week6 {
         public override void TestFunc() {
         }
         */
+    }
+
+    partial class TestPartialClass {
+        public void TestFunc1() {
+            Console.WriteLine("TestFunc1");
+        }
+    }
+
+    partial class TestPartialClass {
+        public void TestFunc2() {
+            Console.WriteLine("TestFunc2");
+        }
     }
 }
