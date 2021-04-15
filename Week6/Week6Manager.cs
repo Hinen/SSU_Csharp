@@ -1,4 +1,5 @@
-﻿using SoongSil_University_Csharp.Core;
+﻿using System;
+using SoongSil_University_Csharp.Core;
 using InternalTest;
 
 namespace SoongSil_University_Csharp.Week6 {
@@ -29,5 +30,31 @@ namespace SoongSil_University_Csharp.Week6 {
             // can access protected internal only in class
             TestProtectedInternalFunc();
         }
+    }
+
+    class TestClass {
+        public virtual void TestFunc() {
+            Console.WriteLine("TestFunc");
+        }
+    }
+
+    class SealedTestClass : TestClass {
+        public sealed override void TestFunc() {
+            Console.WriteLine("SealedTestFunc");
+        }
+    }
+
+    class NewTestClass : TestClass {
+        public new void TestFunc() {
+            Console.WriteLine("NewTestFunc");
+        }
+    }
+
+    class SealedOverrideTestClass : SealedTestClass {
+        /*
+         * can not override by sealed
+        public override void TestFunc() {
+        }
+        */
     }
 }
