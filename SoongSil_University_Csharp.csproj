@@ -50,6 +50,7 @@
     <Compile Include="Core\ProgramMain.cs" />
     <Compile Include="Week5\Week5Manager.cs" />
     <Compile Include="Week6\Week6Manager.cs" />
+    <Compile Include="Week7\Week7Manager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
