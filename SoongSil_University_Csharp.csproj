@@ -52,12 +52,6 @@
     <Compile Include="Core\ProgramMain.cs" />
     <Compile Include="Week5\Week5Manager.cs" />
     <Compile Include="Week6\Week6Manager.cs" />
-    <Compile Include="Week9\Week9Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Week9\Week9Form.Designer.cs">
-      <DependentUpon>Week9Form.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
