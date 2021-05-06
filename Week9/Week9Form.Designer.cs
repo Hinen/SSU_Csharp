@@ -28,13 +28,13 @@
             // 
             // TestButton
             // 
-            this.TestButton.Location = new System.Drawing.Point(229, 250);
+            this.TestButton.Location = new System.Drawing.Point(255, 281);
             this.TestButton.Name = "TestButton";
-            this.TestButton.Size = new System.Drawing.Size(168, 70);
+            this.TestButton.Size = new System.Drawing.Size(128, 31);
             this.TestButton.TabIndex = 0;
             this.TestButton.Text = "Test Button";
             this.TestButton.UseVisualStyleBackColor = true;
-            this.TestButton.Click += new System.EventHandler(this.button1_Click);
+            this.TestButton.Click += new System.EventHandler(this.TestButtonClick);
             // 
             // Week9Form
             // 

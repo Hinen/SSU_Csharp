@@ -10,12 +10,17 @@ using System.Windows.Forms;
 
 namespace Week9 {
     public partial class Week9Form : Form {
+        private DateTime _startDateTime;
+        private DateTime startDateTime => _startDateTime;
+
         public Week9Form() {
             InitializeComponent();
+
+            _startDateTime = DateTime.Now;
         }
 
-        private void button1_Click(object sender, EventArgs e) {
-
+        private void TestButtonClick(object sender, EventArgs e) {
+            MessageBox.Show(startDateTime.ToString());
         }
     }
 }
