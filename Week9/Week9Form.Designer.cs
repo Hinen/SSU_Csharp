@@ -43,6 +43,7 @@
             this.ClientSize = new System.Drawing.Size(634, 604);
             this.Controls.Add(this.TestButton);
             this.Name = "Week9Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Week9Form";
             this.ResumeLayout(false);
 
