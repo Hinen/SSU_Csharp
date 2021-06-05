@@ -88,5 +88,20 @@ namespace WinForms.Week12 {
                 ? "not select file" 
                 : openFileDialog.SafeFileName;
         }
+
+        //
+        private void fontBtn_Click(object sender, EventArgs e) {
+            fontDialog.ShowDialog();
+
+            fontLabel.Font = fontDialog.Font;
+            fontLabel.ForeColor = fontDialog.Color;
+        }
+
+        //
+        private void colorBtn_Click(object sender, EventArgs e) {
+            colorDialog.ShowDialog();
+
+            colorLabel.ForeColor = colorDialog.Color;
+        }
     }
 }

@@ -33,6 +33,12 @@
             this.fileNameLabel = new System.Windows.Forms.Label();
             this.findFileButton = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.fontBtn = new System.Windows.Forms.Button();
+            this.fontLabel = new System.Windows.Forms.Label();
+            this.colorBtn = new System.Windows.Forms.Button();
+            this.colorLabel = new System.Windows.Forms.Label();
+            this.fontDialog = new System.Windows.Forms.FontDialog();
+            this.colorDialog = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // checkedListBox
@@ -133,11 +139,53 @@
             // 
             this.openFileDialog.FileName = "openFileDialog";
             // 
+            // fontBtn
+            // 
+            this.fontBtn.Location = new System.Drawing.Point(255, 312);
+            this.fontBtn.Name = "fontBtn";
+            this.fontBtn.Size = new System.Drawing.Size(136, 39);
+            this.fontBtn.TabIndex = 10;
+            this.fontBtn.Text = "Font Btn";
+            this.fontBtn.UseVisualStyleBackColor = true;
+            this.fontBtn.Click += new System.EventHandler(this.fontBtn_Click);
+            // 
+            // fontLabel
+            // 
+            this.fontLabel.AutoSize = true;
+            this.fontLabel.Location = new System.Drawing.Point(253, 287);
+            this.fontLabel.Name = "fontLabel";
+            this.fontLabel.Size = new System.Drawing.Size(64, 12);
+            this.fontLabel.TabIndex = 9;
+            this.fontLabel.Text = "Font Label";
+            // 
+            // colorBtn
+            // 
+            this.colorBtn.Location = new System.Drawing.Point(255, 401);
+            this.colorBtn.Name = "colorBtn";
+            this.colorBtn.Size = new System.Drawing.Size(136, 39);
+            this.colorBtn.TabIndex = 12;
+            this.colorBtn.Text = "Color btn";
+            this.colorBtn.UseVisualStyleBackColor = true;
+            this.colorBtn.Click += new System.EventHandler(this.colorBtn_Click);
+            // 
+            // colorLabel
+            // 
+            this.colorLabel.AutoSize = true;
+            this.colorLabel.Location = new System.Drawing.Point(253, 376);
+            this.colorLabel.Name = "colorLabel";
+            this.colorLabel.Size = new System.Drawing.Size(70, 12);
+            this.colorLabel.TabIndex = 11;
+            this.colorLabel.Text = "Color Label";
+            // 
             // Week12Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 657);
+            this.Controls.Add(this.colorBtn);
+            this.Controls.Add(this.colorLabel);
+            this.Controls.Add(this.fontBtn);
+            this.Controls.Add(this.fontLabel);
             this.Controls.Add(this.findFileButton);
             this.Controls.Add(this.fileNameLabel);
             this.Controls.Add(this.messageBoxBtn3);
@@ -166,5 +214,11 @@
         private System.Windows.Forms.Label fileNameLabel;
         private System.Windows.Forms.Button findFileButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Button fontBtn;
+        private System.Windows.Forms.Label fontLabel;
+        private System.Windows.Forms.Button colorBtn;
+        private System.Windows.Forms.Label colorLabel;
+        private System.Windows.Forms.FontDialog fontDialog;
+        private System.Windows.Forms.ColorDialog colorDialog;
     }
 }
