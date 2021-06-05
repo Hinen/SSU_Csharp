@@ -13,5 +13,13 @@ namespace WinForms.Week10 {
         public Week10Form() {
             InitializeComponent();
         }
+
+        private void Week10Form_Load(object sender, EventArgs e) {
+            MessageBox.Show("Form Loaded!");
+        }
+
+        private void Week10Form_FormClosed(object sender, FormClosedEventArgs e) {
+            MessageBox.Show("Form Closed!");
+        }
     }
 }
