@@ -25,6 +25,7 @@
         private void InitializeComponent() {
             this.checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.checkedListShowBtn = new System.Windows.Forms.Button();
+            this.modalButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkedListBox
@@ -52,11 +53,22 @@
             this.checkedListShowBtn.UseVisualStyleBackColor = true;
             this.checkedListShowBtn.Click += new System.EventHandler(this.checkedListShowBtn_Click);
             // 
+            // modalButton
+            // 
+            this.modalButton.Location = new System.Drawing.Point(168, 22);
+            this.modalButton.Name = "modalButton";
+            this.modalButton.Size = new System.Drawing.Size(161, 48);
+            this.modalButton.TabIndex = 2;
+            this.modalButton.Text = "Modal";
+            this.modalButton.UseVisualStyleBackColor = true;
+            this.modalButton.Click += new System.EventHandler(this.modalButton_Click);
+            // 
             // Week12Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 657);
+            this.Controls.Add(this.modalButton);
             this.Controls.Add(this.checkedListShowBtn);
             this.Controls.Add(this.checkedListBox);
             this.Name = "Week12Form";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.CheckedListBox checkedListBox;
         private System.Windows.Forms.Button checkedListShowBtn;
+        private System.Windows.Forms.Button modalButton;
     }
 }

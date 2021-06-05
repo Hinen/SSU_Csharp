@@ -27,5 +27,10 @@ namespace WinForms.Week12 {
 
             MessageBox.Show(str);
         }
+
+        private void modalButton_Click(object sender, EventArgs e) {
+            var popup = new PopupOneBtn();
+            popup.ShowDialog();
+        }
     }
 }
