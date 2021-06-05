@@ -34,6 +34,9 @@
             this.textBox = new System.Windows.Forms.TextBox();
             this.passwordBox = new System.Windows.Forms.TextBox();
             this.multiLineBox = new System.Windows.Forms.TextBox();
+            this.listBox = new System.Windows.Forms.ListBox();
+            this.listBoxAddButton = new System.Windows.Forms.Button();
+            this.listBoxRemoveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -146,11 +149,43 @@
             this.multiLineBox.Size = new System.Drawing.Size(238, 100);
             this.multiLineBox.TabIndex = 10;
             // 
+            // listBox
+            // 
+            this.listBox.FormattingEnabled = true;
+            this.listBox.ItemHeight = 12;
+            this.listBox.Location = new System.Drawing.Point(289, 209);
+            this.listBox.Name = "listBox";
+            this.listBox.Size = new System.Drawing.Size(108, 112);
+            this.listBox.TabIndex = 11;
+            // 
+            // listBoxAddButton
+            // 
+            this.listBoxAddButton.Location = new System.Drawing.Point(403, 209);
+            this.listBoxAddButton.Name = "listBoxAddButton";
+            this.listBoxAddButton.Size = new System.Drawing.Size(92, 47);
+            this.listBoxAddButton.TabIndex = 12;
+            this.listBoxAddButton.Text = "Add";
+            this.listBoxAddButton.UseVisualStyleBackColor = true;
+            this.listBoxAddButton.Click += new System.EventHandler(this.listBoxAddButton_Click);
+            // 
+            // listBoxRemoveButton
+            // 
+            this.listBoxRemoveButton.Location = new System.Drawing.Point(403, 263);
+            this.listBoxRemoveButton.Name = "listBoxRemoveButton";
+            this.listBoxRemoveButton.Size = new System.Drawing.Size(92, 47);
+            this.listBoxRemoveButton.TabIndex = 13;
+            this.listBoxRemoveButton.Text = "Remove";
+            this.listBoxRemoveButton.UseVisualStyleBackColor = true;
+            this.listBoxRemoveButton.Click += new System.EventHandler(this.listBoxRemoveButton_Click);
+            // 
             // Week11Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 538);
+            this.Controls.Add(this.listBoxRemoveButton);
+            this.Controls.Add(this.listBoxAddButton);
+            this.Controls.Add(this.listBox);
             this.Controls.Add(this.multiLineBox);
             this.Controls.Add(this.passwordBox);
             this.Controls.Add(this.textBox);
@@ -182,5 +217,8 @@
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.TextBox passwordBox;
         private System.Windows.Forms.TextBox multiLineBox;
+        private System.Windows.Forms.ListBox listBox;
+        private System.Windows.Forms.Button listBoxAddButton;
+        private System.Windows.Forms.Button listBoxRemoveButton;
     }
 }

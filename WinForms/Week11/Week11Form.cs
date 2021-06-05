@@ -61,5 +61,19 @@ namespace WinForms.Week11 {
         private void radioButton3_CheckedChanged(object sender, EventArgs e) {
             RefreshRadioButtonLabel(radioButton3);
         }
+
+        private void listBoxAddButton_Click(object sender, EventArgs e) {
+            listBox.Items.Add("Item" + (listBox.Items.Count + 1));
+        }
+
+        private void listBoxRemoveButton_Click(object sender, EventArgs e) {
+            if (listBox.SelectedIndex == -1)
+                return;
+
+            if (listBox.SelectedIndex >= listBox.Items.Count)
+                return;
+
+            listBox.Items.RemoveAt(listBox.SelectedIndex);
+        }
     }
 }
