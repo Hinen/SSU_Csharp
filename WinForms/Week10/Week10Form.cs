@@ -16,6 +16,7 @@ namespace WinForms.Week10 {
 
         private void Week10Form_Load(object sender, EventArgs e) {
             MessageBox.Show("Form Loaded!");
+            TestButton.Text = "Form Loaded!";
         }
 
         private void Week10Form_FormClosed(object sender, FormClosedEventArgs e) {
