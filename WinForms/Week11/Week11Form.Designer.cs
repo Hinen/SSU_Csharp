@@ -31,6 +31,9 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButtonLabel = new System.Windows.Forms.Label();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.passwordBox = new System.Windows.Forms.TextBox();
+            this.multiLineBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -120,11 +123,37 @@
             this.radioButtonLabel.TabIndex = 7;
             this.radioButtonLabel.Text = "radioButtonLabel";
             // 
+            // textBox
+            // 
+            this.textBox.Location = new System.Drawing.Point(12, 209);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(238, 21);
+            this.textBox.TabIndex = 8;
+            // 
+            // passwordBox
+            // 
+            this.passwordBox.Location = new System.Drawing.Point(12, 236);
+            this.passwordBox.Name = "passwordBox";
+            this.passwordBox.PasswordChar = '*';
+            this.passwordBox.Size = new System.Drawing.Size(238, 21);
+            this.passwordBox.TabIndex = 9;
+            // 
+            // multiLineBox
+            // 
+            this.multiLineBox.Location = new System.Drawing.Point(12, 263);
+            this.multiLineBox.Multiline = true;
+            this.multiLineBox.Name = "multiLineBox";
+            this.multiLineBox.Size = new System.Drawing.Size(238, 100);
+            this.multiLineBox.TabIndex = 10;
+            // 
             // Week11Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 538);
+            this.Controls.Add(this.multiLineBox);
+            this.Controls.Add(this.passwordBox);
+            this.Controls.Add(this.textBox);
             this.Controls.Add(this.radioButtonLabel);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -150,5 +179,8 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label radioButtonLabel;
+        private System.Windows.Forms.TextBox textBox;
+        private System.Windows.Forms.TextBox passwordBox;
+        private System.Windows.Forms.TextBox multiLineBox;
     }
 }
