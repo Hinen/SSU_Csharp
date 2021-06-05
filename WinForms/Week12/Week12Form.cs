@@ -13,7 +13,7 @@ namespace WinForms.Week12 {
         public Week12Form() {
             InitializeComponent();
         }
-        
+
         //
         private void checkedListShowBtn_Click(object sender, EventArgs e) {
             if (checkedListBox.CheckedItems.Count == 0) {
@@ -75,6 +75,18 @@ namespace WinForms.Week12 {
                 MessageBox.Show("Abort!");
             else if (result == DialogResult.Retry)
                 MessageBox.Show("Retry!");
+        }
+
+        //
+        private void findFileButton_Click(object sender, EventArgs e) {
+            openFileDialog.FileName = "";
+            openFileDialog.InitialDirectory = @"C:\";
+            openFileDialog.Multiselect = false;
+            openFileDialog.ShowDialog();
+
+            fileNameLabel.Text = string.IsNullOrEmpty(openFileDialog.SafeFileName) 
+                ? "not select file" 
+                : openFileDialog.SafeFileName;
         }
     }
 }

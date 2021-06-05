@@ -30,6 +30,9 @@
             this.messageBoxBtn1 = new System.Windows.Forms.Button();
             this.messageBoxBtn2 = new System.Windows.Forms.Button();
             this.messageBoxBtn3 = new System.Windows.Forms.Button();
+            this.fileNameLabel = new System.Windows.Forms.Label();
+            this.findFileButton = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // checkedListBox
@@ -107,11 +110,36 @@
             this.messageBoxBtn3.UseVisualStyleBackColor = true;
             this.messageBoxBtn3.Click += new System.EventHandler(this.messageBoxBtn3_Click);
             // 
+            // fileNameLabel
+            // 
+            this.fileNameLabel.AutoSize = true;
+            this.fileNameLabel.Location = new System.Drawing.Point(253, 197);
+            this.fileNameLabel.Name = "fileNameLabel";
+            this.fileNameLabel.Size = new System.Drawing.Size(63, 12);
+            this.fileNameLabel.TabIndex = 7;
+            this.fileNameLabel.Text = "File Name";
+            // 
+            // findFileButton
+            // 
+            this.findFileButton.Location = new System.Drawing.Point(255, 222);
+            this.findFileButton.Name = "findFileButton";
+            this.findFileButton.Size = new System.Drawing.Size(136, 39);
+            this.findFileButton.TabIndex = 8;
+            this.findFileButton.Text = "Find file";
+            this.findFileButton.UseVisualStyleBackColor = true;
+            this.findFileButton.Click += new System.EventHandler(this.findFileButton_Click);
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog";
+            // 
             // Week12Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 657);
+            this.Controls.Add(this.findFileButton);
+            this.Controls.Add(this.fileNameLabel);
             this.Controls.Add(this.messageBoxBtn3);
             this.Controls.Add(this.messageBoxBtn2);
             this.Controls.Add(this.messageBoxBtn1);
@@ -122,6 +150,7 @@
             this.Name = "Week12Form";
             this.Text = "Week12Form";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -134,5 +163,8 @@
         private System.Windows.Forms.Button messageBoxBtn1;
         private System.Windows.Forms.Button messageBoxBtn2;
         private System.Windows.Forms.Button messageBoxBtn3;
+        private System.Windows.Forms.Label fileNameLabel;
+        private System.Windows.Forms.Button findFileButton;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }
