@@ -14,7 +14,10 @@ namespace WinForms {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Week9.Week9Form());
+            //var form = new Week9.Week9Form();
+            var form = new Week10.Week10Form();
+
+            Application.Run(form);
         }
     }
 }
