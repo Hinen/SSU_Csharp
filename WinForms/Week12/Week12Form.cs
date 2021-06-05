@@ -32,5 +32,10 @@ namespace WinForms.Week12 {
             var popup = new PopupOneBtn();
             popup.ShowDialog();
         }
+
+        private void modalessButton_Click(object sender, EventArgs e) {
+            var popup = new PopupOneBtn();
+            popup.Show();
+        }
     }
 }
