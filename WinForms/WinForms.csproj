@@ -60,6 +60,18 @@
     <Compile Include="Week11\Week11Form.Designer.cs">
       <DependentUpon>Week11Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Week12\PopupOneBtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Week12\PopupOneBtn.Designer.cs">
+      <DependentUpon>PopupOneBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Week12\Week12Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Week12\Week12Form.Designer.cs">
+      <DependentUpon>Week12Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Week9\Week9Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Week11\Week11Form.resx">
       <DependentUpon>Week11Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Week12\PopupOneBtn.resx">
+      <DependentUpon>PopupOneBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Week12\Week12Form.resx">
+      <DependentUpon>Week12Form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
