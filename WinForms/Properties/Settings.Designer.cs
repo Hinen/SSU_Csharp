@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Week9.Properties {
+namespace WinForms.Properties {
 
 
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Week9 {
+namespace WinForms.Week9 {
     public partial class Week9Form : Form {
         private DateTime _startDateTime;
         private DateTime startDateTime => _startDateTime;
