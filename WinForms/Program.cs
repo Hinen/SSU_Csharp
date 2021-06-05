@@ -15,7 +15,8 @@ namespace WinForms {
             Application.SetCompatibleTextRenderingDefault(false);
 
             //var form = new Week9.Week9Form();
-            var form = new Week10.Week10Form();
+            //var form = new Week10.Week10Form();
+            var form = new Week11.Week11Form();
 
             Application.Run(form);
         }
