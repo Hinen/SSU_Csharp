@@ -27,6 +27,9 @@
             this.checkedListShowBtn = new System.Windows.Forms.Button();
             this.modalButton = new System.Windows.Forms.Button();
             this.modalessButton = new System.Windows.Forms.Button();
+            this.messageBoxBtn1 = new System.Windows.Forms.Button();
+            this.messageBoxBtn2 = new System.Windows.Forms.Button();
+            this.messageBoxBtn3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkedListBox
@@ -74,11 +77,44 @@
             this.modalessButton.UseVisualStyleBackColor = true;
             this.modalessButton.Click += new System.EventHandler(this.modalessButton_Click);
             // 
+            // messageBoxBtn1
+            // 
+            this.messageBoxBtn1.Location = new System.Drawing.Point(17, 197);
+            this.messageBoxBtn1.Name = "messageBoxBtn1";
+            this.messageBoxBtn1.Size = new System.Drawing.Size(171, 39);
+            this.messageBoxBtn1.TabIndex = 4;
+            this.messageBoxBtn1.Text = "Message Box 1";
+            this.messageBoxBtn1.UseVisualStyleBackColor = true;
+            this.messageBoxBtn1.Click += new System.EventHandler(this.messageBoxBtn1_Click);
+            // 
+            // messageBoxBtn2
+            // 
+            this.messageBoxBtn2.Location = new System.Drawing.Point(17, 242);
+            this.messageBoxBtn2.Name = "messageBoxBtn2";
+            this.messageBoxBtn2.Size = new System.Drawing.Size(171, 39);
+            this.messageBoxBtn2.TabIndex = 5;
+            this.messageBoxBtn2.Text = "Message Box 2";
+            this.messageBoxBtn2.UseVisualStyleBackColor = true;
+            this.messageBoxBtn2.Click += new System.EventHandler(this.messageBoxBtn2_Click);
+            // 
+            // messageBoxBtn3
+            // 
+            this.messageBoxBtn3.Location = new System.Drawing.Point(17, 287);
+            this.messageBoxBtn3.Name = "messageBoxBtn3";
+            this.messageBoxBtn3.Size = new System.Drawing.Size(171, 39);
+            this.messageBoxBtn3.TabIndex = 6;
+            this.messageBoxBtn3.Text = "Message Box 3";
+            this.messageBoxBtn3.UseVisualStyleBackColor = true;
+            this.messageBoxBtn3.Click += new System.EventHandler(this.messageBoxBtn3_Click);
+            // 
             // Week12Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 657);
+            this.Controls.Add(this.messageBoxBtn3);
+            this.Controls.Add(this.messageBoxBtn2);
+            this.Controls.Add(this.messageBoxBtn1);
             this.Controls.Add(this.modalessButton);
             this.Controls.Add(this.modalButton);
             this.Controls.Add(this.checkedListShowBtn);
@@ -95,5 +131,8 @@
         private System.Windows.Forms.Button checkedListShowBtn;
         private System.Windows.Forms.Button modalButton;
         private System.Windows.Forms.Button modalessButton;
+        private System.Windows.Forms.Button messageBoxBtn1;
+        private System.Windows.Forms.Button messageBoxBtn2;
+        private System.Windows.Forms.Button messageBoxBtn3;
     }
 }
