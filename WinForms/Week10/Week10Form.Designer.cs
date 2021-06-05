@@ -23,13 +23,25 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.TestButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // TestButton
+            // 
+            this.TestButton.ForeColor = System.Drawing.Color.Coral;
+            this.TestButton.Location = new System.Drawing.Point(199, 170);
+            this.TestButton.Name = "TestButton";
+            this.TestButton.Size = new System.Drawing.Size(218, 88);
+            this.TestButton.TabIndex = 0;
+            this.TestButton.Text = "Test Button Text";
+            this.TestButton.UseVisualStyleBackColor = true;
             // 
             // Week10Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(589, 551);
+            this.Controls.Add(this.TestButton);
             this.Name = "Week10Form";
             this.Text = "Week10Form";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Week10Form_FormClosed);
@@ -39,5 +51,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button TestButton;
     }
 }
