@@ -26,18 +26,6 @@ namespace WinForms.Week11 {
             }
         }
 
-        private void RefreshRadioButtonLabel(RadioButton radioButton) {
-            var text = radioButton.Text;
-
-            if (radioButton.Checked)
-                radioButtonLabel.Text += " " + text;
-            else {
-                var idx = radioButtonLabel.Text.IndexOf(text) - 1;
-
-                radioButtonLabel.Text = radioButtonLabel.Text.Remove(idx, text.Length + 1);
-            }
-        }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e) {
             RefreshCheckBoxLabel(checkBox1);
         }
@@ -48,6 +36,19 @@ namespace WinForms.Week11 {
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e) {
             RefreshCheckBoxLabel(checkBox3);
+        }
+
+        //
+        private void RefreshRadioButtonLabel(RadioButton radioButton) {
+            var text = radioButton.Text;
+
+            if (radioButton.Checked)
+                radioButtonLabel.Text += " " + text;
+            else {
+                var idx = radioButtonLabel.Text.IndexOf(text) - 1;
+
+                radioButtonLabel.Text = radioButtonLabel.Text.Remove(idx, text.Length + 1);
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e) {
@@ -62,6 +63,7 @@ namespace WinForms.Week11 {
             RefreshRadioButtonLabel(radioButton3);
         }
 
+        //
         private void listBoxAddButton_Click(object sender, EventArgs e) {
             listBox.Items.Add("Item" + (listBox.Items.Count + 1));
         }
@@ -74,6 +76,29 @@ namespace WinForms.Week11 {
                 return;
 
             listBox.Items.RemoveAt(listBox.SelectedIndex);
+        }
+
+        //
+        private void comboToListBtn_Click(object sender, EventArgs e) {
+            if (comboBox.SelectedItem == null)
+                return;
+
+            listBox2.Items.Add(comboBox.SelectedItem);
+            comboBox.Items.Remove(comboBox.SelectedItem);
+            comboBox.Text = "";
+        }
+
+        private void listToComboBtn_Click(object sender, EventArgs e) {
+            if (listBox2.SelectedIndex == -1)
+                return;
+
+            if (listBox2.SelectedIndex >= listBox2.Items.Count)
+                return;
+
+            var item = listBox2.Items[listBox2.SelectedIndex];
+
+            comboBox.Items.Add(item);
+            listBox2.Items.Remove(item);
         }
     }
 }

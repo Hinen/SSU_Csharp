@@ -37,6 +37,10 @@
             this.listBox = new System.Windows.Forms.ListBox();
             this.listBoxAddButton = new System.Windows.Forms.Button();
             this.listBoxRemoveButton = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.comboToListBtn = new System.Windows.Forms.Button();
+            this.listToComboBtn = new System.Windows.Forms.Button();
+            this.comboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -178,11 +182,56 @@
             this.listBoxRemoveButton.UseVisualStyleBackColor = true;
             this.listBoxRemoveButton.Click += new System.EventHandler(this.listBoxRemoveButton_Click);
             // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 12;
+            this.listBox2.Items.AddRange(new object[] {
+            "hi",
+            "woo",
+            "sung"});
+            this.listBox2.Location = new System.Drawing.Point(12, 402);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(121, 124);
+            this.listBox2.TabIndex = 14;
+            // 
+            // comboToListBtn
+            // 
+            this.comboToListBtn.Location = new System.Drawing.Point(139, 402);
+            this.comboToListBtn.Name = "comboToListBtn";
+            this.comboToListBtn.Size = new System.Drawing.Size(87, 46);
+            this.comboToListBtn.TabIndex = 15;
+            this.comboToListBtn.Text = "<<";
+            this.comboToListBtn.UseVisualStyleBackColor = true;
+            this.comboToListBtn.Click += new System.EventHandler(this.comboToListBtn_Click);
+            // 
+            // listToComboBtn
+            // 
+            this.listToComboBtn.Location = new System.Drawing.Point(139, 454);
+            this.listToComboBtn.Name = "listToComboBtn";
+            this.listToComboBtn.Size = new System.Drawing.Size(87, 46);
+            this.listToComboBtn.TabIndex = 16;
+            this.listToComboBtn.Text = ">>";
+            this.listToComboBtn.UseVisualStyleBackColor = true;
+            this.listToComboBtn.Click += new System.EventHandler(this.listToComboBtn_Click);
+            // 
+            // comboBox
+            // 
+            this.comboBox.FormattingEnabled = true;
+            this.comboBox.Location = new System.Drawing.Point(232, 402);
+            this.comboBox.Name = "comboBox";
+            this.comboBox.Size = new System.Drawing.Size(103, 20);
+            this.comboBox.TabIndex = 17;
+            // 
             // Week11Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 538);
+            this.Controls.Add(this.comboBox);
+            this.Controls.Add(this.listToComboBtn);
+            this.Controls.Add(this.comboToListBtn);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBoxRemoveButton);
             this.Controls.Add(this.listBoxAddButton);
             this.Controls.Add(this.listBox);
@@ -220,5 +269,9 @@
         private System.Windows.Forms.ListBox listBox;
         private System.Windows.Forms.Button listBoxAddButton;
         private System.Windows.Forms.Button listBoxRemoveButton;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button comboToListBtn;
+        private System.Windows.Forms.Button listToComboBtn;
+        private System.Windows.Forms.ComboBox comboBox;
     }
 }
