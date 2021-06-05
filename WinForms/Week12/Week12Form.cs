@@ -13,5 +13,19 @@ namespace WinForms.Week12 {
         public Week12Form() {
             InitializeComponent();
         }
+
+        private void checkedListShowBtn_Click(object sender, EventArgs e) {
+            if (checkedListBox.CheckedItems.Count == 0) {
+                MessageBox.Show("no item checked!");
+                return;
+            }
+
+            var str = "checked item : ";
+            foreach (var item in checkedListBox.CheckedItems) {
+                str += item.ToString() + " ";
+            }
+
+            MessageBox.Show(str);
+        }
     }
 }
