@@ -25,6 +25,8 @@
         private void InitializeComponent() {
             this.clientPosLabel = new System.Windows.Forms.Label();
             this.posLabel = new System.Windows.Forms.Label();
+            this.focusButton1 = new System.Windows.Forms.Button();
+            this.focusButton2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // clientPosLabel
@@ -45,11 +47,33 @@
             this.posLabel.TabIndex = 1;
             this.posLabel.Text = "pos label";
             // 
+            // focusButton1
+            // 
+            this.focusButton1.Location = new System.Drawing.Point(170, 12);
+            this.focusButton1.Name = "focusButton1";
+            this.focusButton1.Size = new System.Drawing.Size(128, 41);
+            this.focusButton1.TabIndex = 2;
+            this.focusButton1.Text = "focus1";
+            this.focusButton1.UseVisualStyleBackColor = true;
+            this.focusButton1.Click += new System.EventHandler(this.focusButton1_Click);
+            // 
+            // focusButton2
+            // 
+            this.focusButton2.Location = new System.Drawing.Point(304, 12);
+            this.focusButton2.Name = "focusButton2";
+            this.focusButton2.Size = new System.Drawing.Size(128, 41);
+            this.focusButton2.TabIndex = 3;
+            this.focusButton2.Text = "focus2";
+            this.focusButton2.UseVisualStyleBackColor = true;
+            this.focusButton2.Click += new System.EventHandler(this.focusButton2_Click);
+            // 
             // Week13Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 557);
+            this.Controls.Add(this.focusButton2);
+            this.Controls.Add(this.focusButton1);
             this.Controls.Add(this.posLabel);
             this.Controls.Add(this.clientPosLabel);
             this.Name = "Week13Form";
@@ -67,5 +91,7 @@
 
         private System.Windows.Forms.Label clientPosLabel;
         private System.Windows.Forms.Label posLabel;
+        private System.Windows.Forms.Button focusButton1;
+        private System.Windows.Forms.Button focusButton2;
     }
 }

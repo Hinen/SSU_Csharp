@@ -36,5 +36,14 @@ namespace WinForms.Week13 {
         private void Week13Form_MouseClick(object sender, MouseEventArgs e) {
             MessageBox.Show("Mouse Clicked!");
         }
+
+        //
+        private void focusButton1_Click(object sender, EventArgs e) {
+            focusButton2.Focus();
+        }
+
+        private void focusButton2_Click(object sender, EventArgs e) {
+            focusButton1.Focus();
+        }
     }
 }
