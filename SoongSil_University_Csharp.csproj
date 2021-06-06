@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\WeekManagerBase.cs" />
+    <Compile Include="Week14\Week14Manager.cs" />
     <Compile Include="Week2\Week2Manager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Week3\Week3Manager.cs" />
@@ -62,6 +63,7 @@
       <Name>InternalTest</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
