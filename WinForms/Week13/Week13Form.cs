@@ -34,7 +34,9 @@ namespace WinForms.Week13 {
         }
 
         private void Week13Form_MouseClick(object sender, MouseEventArgs e) {
-            MessageBox.Show("Mouse Clicked!");
+            //MessageBox.Show("Mouse Clicked!");
+            focusButton1.Enabled = !focusButton1.Enabled;
+            focusButton2.Enabled = !focusButton2.Enabled;
         }
 
         //
@@ -44,6 +46,23 @@ namespace WinForms.Week13 {
 
         private void focusButton2_Click(object sender, EventArgs e) {
             focusButton1.Focus();
+        }
+
+        //
+        private void Week13Form_KeyDown(object sender, KeyEventArgs e) {
+            var speed = 5;
+
+            if (e.KeyCode == Keys.Up)
+                keyCodeLabel.Location = new Point(keyCodeLabel.Location.X, keyCodeLabel.Location.Y - speed);
+
+            if (e.KeyCode == Keys.Down)
+                keyCodeLabel.Location = new Point(keyCodeLabel.Location.X, keyCodeLabel.Location.Y + speed);
+
+            if (e.KeyCode == Keys.Left)
+                keyCodeLabel.Location = new Point(keyCodeLabel.Location.X - speed, keyCodeLabel.Location.Y);
+
+            if (e.KeyCode == Keys.Right)
+                keyCodeLabel.Location = new Point(keyCodeLabel.Location.X + speed, keyCodeLabel.Location.Y);
         }
     }
 }

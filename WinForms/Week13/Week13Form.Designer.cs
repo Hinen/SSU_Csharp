@@ -27,6 +27,7 @@
             this.posLabel = new System.Windows.Forms.Label();
             this.focusButton1 = new System.Windows.Forms.Button();
             this.focusButton2 = new System.Windows.Forms.Button();
+            this.keyCodeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // clientPosLabel
@@ -67,17 +68,28 @@
             this.focusButton2.UseVisualStyleBackColor = true;
             this.focusButton2.Click += new System.EventHandler(this.focusButton2_Click);
             // 
+            // keyCodeLabel
+            // 
+            this.keyCodeLabel.AutoSize = true;
+            this.keyCodeLabel.Location = new System.Drawing.Point(249, 253);
+            this.keyCodeLabel.Name = "keyCodeLabel";
+            this.keyCodeLabel.Size = new System.Drawing.Size(94, 12);
+            this.keyCodeLabel.TabIndex = 4;
+            this.keyCodeLabel.Text = "key Code Label";
+            // 
             // Week13Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 557);
+            this.Controls.Add(this.keyCodeLabel);
             this.Controls.Add(this.focusButton2);
             this.Controls.Add(this.focusButton1);
             this.Controls.Add(this.posLabel);
             this.Controls.Add(this.clientPosLabel);
             this.Name = "Week13Form";
             this.Text = "Week13Form";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Week13Form_KeyDown);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Week13Form_MouseClick);
             this.MouseEnter += new System.EventHandler(this.Week13Form_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.Week13Form_MouseLeave);
@@ -93,5 +105,6 @@
         private System.Windows.Forms.Label posLabel;
         private System.Windows.Forms.Button focusButton1;
         private System.Windows.Forms.Button focusButton2;
+        private System.Windows.Forms.Label keyCodeLabel;
     }
 }
