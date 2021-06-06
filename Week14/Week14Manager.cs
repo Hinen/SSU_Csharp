@@ -4,7 +4,8 @@ using SoongSil_University_Csharp.Core;
 
 namespace SoongSil_University_Csharp.Week14 {
     class Week14Manager : WeekManagerBase {
-        private int resource = 0;
+        private int _resource = 0;
+        private Object _resourceLock = new object();
 
         public Week14Manager() : base(2) { }
 
@@ -24,13 +25,19 @@ namespace SoongSil_University_Csharp.Week14 {
         }
 
         private void Thread1() {
-            for (int i = 0; i < 5; i++) {
-                Console.WriteLine(i + resource);
+            lock (_resourceLock) {
+                for (int i = 0; i < 10; i++) {
+                    _resource += i;
+                    Console.WriteLine(_resource);
+                }
             }
         }
 
         private void Thread2() {
-            resource += 100;
+            lock (_resourceLock) {
+                _resource += 1000;
+                Console.WriteLine(_resource);
+            }
         }
     }
 }
